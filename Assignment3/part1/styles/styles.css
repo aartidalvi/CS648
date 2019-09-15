@@ -1,0 +1,62 @@
+/*
+Styles for part 1.
+*/
+
+body {
+   /* line height, font size, bgcolor */
+   font-family: "Arial", Helvetica, sans-serif;
+   font-size: 1em;
+   line-height: 2em;
+   background-color: #ededed;
+}
+h3 {
+   border-bottom: 1px solid #929ca4;
+   color: crimson;
+}
+
+p:first-of-type::first-letter {
+   font-size: 30px;
+}
+
+.solution {
+   color: #cc1c0d;
+   font-weight: bold;
+}
+
+#testimonial1,
+#testimonial2 {
+   font-style: italic;
+   margin-left: 50px;
+}
+
+a[href^="http://"]:link {
+   color: green;
+   text-decoration: none;
+}
+
+a[href^="http://"]:visited {
+   color: gray;
+   text-decoration: line-through;
+}
+
+a[href^="http://"]:hover {
+   color: purple;
+   text-decoration: underline;
+}
+
+a[href^="http://"]:active {
+   color: goldenrod;
+   text-decoration: overline;
+}
+
+ul {
+   list-style-type: none;
+}
+
+li:first-child {
+   color: blue;
+}
+
+li:last-child {
+   color: red;
+}
