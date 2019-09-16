@@ -1,14 +1,20 @@
 /*
-Styles for part 1.
+CSS file for part 1.
 */
 
+#testimonial1,
+#testimonial2 {
+   font-style: italic;
+   margin-left: 50px;
+}
+
 body {
-   /* line height, font size, bgcolor */
    font-family: "Arial", Helvetica, sans-serif;
    font-size: 1em;
    line-height: 2em;
    background-color: #ededed;
 }
+
 h3 {
    border-bottom: 1px solid #929ca4;
    color: crimson;
@@ -23,30 +29,24 @@ p:first-of-type::first-letter {
    font-weight: bold;
 }
 
-#testimonial1,
-#testimonial2 {
-   font-style: italic;
-   margin-left: 50px;
-}
-
-a[href^="http://"]:link {
-   color: green;
-   text-decoration: none;
-}
-
-a[href^="http://"]:visited {
-   color: gray;
-   text-decoration: line-through;
-}
-
 a[href^="http://"]:hover {
-   color: purple;
+   color: indianred;
    text-decoration: underline;
 }
 
+a[href^="http://"]:visited {
+   color: dimgray;
+   text-decoration: line-through;
+}
+
 a[href^="http://"]:active {
-   color: goldenrod;
+   color: olive;
    text-decoration: overline;
+}
+
+a[href^="http://"]:link {
+   color: rgb(87, 1, 58);
+   text-decoration: none;
 }
 
 ul {
