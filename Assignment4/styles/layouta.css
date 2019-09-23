@@ -1,0 +1,43 @@
+main>* {
+  background: silver;
+}
+
+main {
+  display: grid;
+  width: 960px;
+  grid: repeat(11, 1fr) / repeat(13, 1fr);
+  gap: 16px;
+  margin: 20px auto 0 auto;
+}
+
+header {
+  grid-area: 1 / 1 / 2 / 4;
+}
+
+nav {
+  display: grid;
+  grid-area: 1 / 7 / 2 / 13;
+  align-self: center;
+  align-content: center;
+  justify-items: center;
+  grid-template-columns: repeat(4, auto);
+  height: 50px;
+}
+
+.prod2 {
+  grid-area: 7 / 7 / 10 / span 6;
+}
+
+.prodimg {
+  grid-area: 2 / 1 / 7 / 13;
+}
+
+.prod1 {
+  grid-area: 7 / 1 / 10 / span 6;
+}
+
+footer {
+  grid-area: 10 / 1 / 11 / 13;
+  text-align: center;
+  padding-top: 10px;
+}
