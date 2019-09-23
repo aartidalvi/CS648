@@ -1,3 +1,13 @@
+header {
+  grid-area: 1 / 1 / 2 / 4;
+}
+
+.title {
+  display: grid;
+  height: 60px;
+  grid-row: 6/7;
+}
+
 main>* {
   background: silver;
 }
@@ -5,13 +15,9 @@ main>* {
 main {
   display: grid;
   width: 960px;
-  margin: 20px auto 0 auto;
+  margin: 25px auto 0 auto;
   grid: repeat(10, 1fr) / repeat(12, 1fr);
   gap: 15px;
-}
-
-header {
-  grid-area: 1 / 1 / 2 / 4;
 }
 
 nav {
@@ -24,12 +30,6 @@ nav {
   height: 50px;
 }
 
-footer {
-  grid-area: 12 / 1 / 13 / 13;
-  text-align: center;
-  padding: 15px;
-}
-
 .banner {
   grid-area: 2 / 1 / 6 / 13;
 }
@@ -39,27 +39,9 @@ footer {
   text-align: justify;
 }
 
-.title {
-  display: grid;
-  height: 60px;
-  grid-row: 6/7;
-}
-
-.title:first-of-type {
-  grid-column: 1/4;
-}
-
-.title:nth-of-type(2) {
-  grid-column: 7/10;
-}
-
-.posts {
-  /* container for posts */
-  background: white;
-  display: grid;
-  grid-area: 7/1 / 12/7;
-  grid-template-columns: auto;
-  gap: 15px;
+.prod {
+  background: silver;
+  size: auto;
 }
 
 .products {
@@ -70,12 +52,30 @@ footer {
   gap: 15px;
 }
 
-.product {
+.title:first-of-type {
+  grid-column: 1/4;
+}
+
+.title:nth-of-type(2) {
+  grid-column: 7/10;
+}
+
+
+.blog_post {
   background: silver;
   size: auto;
 }
 
-.blog_posts {
-  background: silver;
-  size: auto;
+.posts {
+  background: white;
+  display: grid;
+  grid-area: 7/1 / 12/7;
+  grid-template-columns: auto;
+  gap: 15px;
+}
+
+footer {
+  grid-area: 12 / 1 / 13 / 13;
+  text-align: center;
+  padding: 15px;
 }
