@@ -11,6 +11,7 @@ main {
   width: 960px;
   margin: 20px auto 0 auto;
   grid: repeat(12, 1fr) / repeat(12, 1fr);
+  font-family: Arial, Helvetica, sans-serif;
   gap: 15px;
 }
 
