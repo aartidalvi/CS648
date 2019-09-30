@@ -1,0 +1,22 @@
+main {
+  width: 10in - 20px; // 1 inch = 96px
+  margin: 0 auto;
+  padding: 0 10px;
+  @include break(959px) {
+    width: 768px;
+  }
+  @include break(767px) {
+    width: 460px;
+  }
+  @include break(459px) {
+    width: 300px;
+  }
+}
+
+body {
+  font-family: $font-body;
+  font-size: 1em;
+  line-height: 2em;
+  background: url($bg-image) $background repeat-x;
+  margin: 0;
+}
