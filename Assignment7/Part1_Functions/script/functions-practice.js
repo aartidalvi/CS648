@@ -20,11 +20,12 @@ function findModulus(num1, num2) {
 
 //Problem 5
 function sumNumbers(input_numbers) {
-    var i, result =0;
-    for (i = 0; i < input_numbers.length; i++) {
-        result += input_numbers[i];
+    var result = 0;
+    for (var i = 0; i < input_numbers.length; i++) {
+        result += Number(input_numbers[i]);
     }
     return result;
+
 }
 
 //Problem 1
@@ -46,9 +47,6 @@ var num2 = 10;
 console.log(findModulus(num1, num2) + " is the modulus of " + num1 + " and " + num2);
 
 //Problem 5
-var input_numbers = [];
-var i;
-for (i = 0; i < 5; i++) {
-    input_numbers[i] = parseInt(window.prompt("Enter " + i +"th integer"));
-}
-console.log("The result of adding all inputs is " + sumNumbers(input_numbers));
+var input = prompt("Enter a list of intergers delimited by commas");
+var numbers = input.split(',');
+console.log("The result of adding all inputs is " + sumNumbers(numbers));
