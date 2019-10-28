@@ -10,33 +10,37 @@
     <script>
     $(document).ready(function() {
 
-    //16
+    //Task 16
     createButton(1);
 
     $("#button1").click(function(){
-        window.alert("You just clicked a button!");
+        window.alert("You just clicked first button!");
     });
 
-    //17
+    //Task 17
     createButton(2);
 
     $("#button2").bind("click", function(){
-        window.alert("You just clicked a button!");
+        window.alert("You just clicked second button!");
     });
 
-    //18
+    //Task 18
     createButton(3);
 
     $("#button3").on("click", function(){
-        window.alert("You just clicked a button!")
+        window.alert("You just clicked third button!")
     });
 
-    //19
+    //Task 19
     createButton(4);
     createButton(5);
 
-    $("#button5, #button4").on("click", function(){
-        window.alert("You just clicked a button!")
+    $("#button4").on("click", function(){
+        window.alert("You just clicked fourth button!")
+    });
+
+    $("#button5").on("click", function(){
+        window.alert("You just clicked fifth button!")
     });
 
     function createButton(button) {
@@ -44,7 +48,7 @@
             $(`#button-${button}`).css("margin", "10px 0 10px 0");
     }
 
-    //20
+    //Task 20
     let div = document.createElement("div");
     div.setAttribute("id","div_css");
     $("body").append(div);
@@ -56,8 +60,7 @@
 
 
 
-    //21
-
+    //Task 21
     let span = document.createElement("span") 
     span.setAttribute('id','span')
     span.textContent = "Span Added!"
@@ -80,7 +83,7 @@
     });
 
 
-    //22
+    //Task 22
     let link = document.createElement("a")
     link.setAttribute("href","https://www.modulemedia.com") 
     link.setAttribute("id","media_link") 
@@ -92,8 +95,7 @@
             alert(event.target);
     });
 
-    //23
-
+    //Task 23
     let div_window_size = document.createElement("div")
     div_window_size.setAttribute("id","window_size")
     div_window_size.innerHTML = `Width : ${$(window).width()}px <br/> Height : ${$(window).height()}px`
@@ -104,8 +106,7 @@
         $("#window_size").text(`Width: ${$(window).width()} Height: ${$(window).height()}`)
     })  
 
-    //24
-
+    //Task 24
     let textfield = document.createElement("input")
     textfield.setAttribute('id',"focus")
     $("body").append(textfield,"<br/><br/>")
@@ -118,8 +119,7 @@
         $("#focus").css("background-color", "white");
     })
 
-    //25
-
+    //Task 25
     let form = document.createElement("form")
     form.setAttribute("id","form")
 
@@ -173,7 +173,4 @@
     });   
     </script>
 </head>
-<body>
-    
-</body>
 </html>
